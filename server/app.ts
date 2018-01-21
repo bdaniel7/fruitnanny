@@ -7,7 +7,7 @@ import light from "./routes/light";
 let app = express();
 
 let config = {
-    baby_birthday: "2016-03-15",
+    baby_birthday: "2017-04-27",
 };
 
 app.set("view engine", "ejs");

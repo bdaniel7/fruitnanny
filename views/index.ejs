@@ -5,7 +5,7 @@
   <% include ./partials/head %>
   <script type="text/javascript">
     $(document).ready(function() {
-        DHT.init();
+        //DHT.init();
         VideoPlayer.init();
     });
     
@@ -44,8 +44,8 @@
                 <!--source src="public/small.mp4" type="video/mp4"-->
               </video>
               <div id="fullscreen-info" class="fs-info">
-                <div id="fs-temperature" ></div>
-                <div id="fs-humidity" ></div>
+                <div class="hidden" id="fs-temperature" ></div>
+                <div class="hidden" id="fs-humidity" ></div>
                 <div id="fs-audiolevel"></div>
               </div>
               
@@ -80,7 +80,7 @@
               </div>
             </div>
 
-            <div class="row">
+            <div class="hidden row">
               <div id="temperature" class="col-md-5"></div>
               <div id="humidity" class="col-md-5"></div>
             </div>
